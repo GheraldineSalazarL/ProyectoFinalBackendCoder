@@ -1,7 +1,7 @@
 function addCart(id) {
   const quantityProduct = document.getElementById(id).value;
 
-  fetch(`http://localhost:8080/api/carts/cart/add/${id}`, {
+  fetch(`/api/carts/cart/add/${id}`, {
     method: 'POST',
     body: JSON.stringify({id: id, quantityProduct: quantityProduct}),
     headers: {

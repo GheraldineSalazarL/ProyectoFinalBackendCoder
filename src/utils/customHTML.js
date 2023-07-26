@@ -89,7 +89,7 @@ export const generatePasswordResetEmailHTML = (userHash) => {
     <div class="container">
         <h2 class="success">Recuperación de contraseña</h2>
         <p>Para recuperar la contraseña haga click en el enlace</p>
-        <a href="http://localhost:8080/resetPassword?token=${userHash}"> <button> Recuperar Contraseña </button> </a>
+        <a href="/resetPassword?token=${userHash}"> <button> Recuperar Contraseña </button> </a>
     </div>
 </body>
 </html>` }

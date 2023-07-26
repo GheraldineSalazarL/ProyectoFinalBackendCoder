@@ -94,7 +94,7 @@ export const resetPassword = async (user, userResetPasswordDB, newPassword) => {
     
     if (tokenCreatedAt + tokenExpiration < currentTime) {
         await sessionsRepository.deleteUserResetPassword(userResetPasswordDB.user);
-        fetch('http://localhost:8080/api/sessions/forgot-password', {
+        fetch('/api/sessions/forgot-password', {
             method: 'POST',
             body: JSON.stringify(obj),
             headers: {

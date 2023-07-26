@@ -18,10 +18,10 @@ export const getProductsPaginate = async (limit, page, sort, category, stock) =>
 
     const products = result.docs; 
     result.prevLink = result.hasPrevPage
-        ? `http://localhost:8080/api/products?limit=${limit}&page=${result.prevPage}`
+        ? `/api/products?limit=${limit}&page=${result.prevPage}`
         : null;
     result.nextLink = result.hasNextPage
-        ? `http://localhost:8080/api/products?limit=${limit}&page=${result.nextPage}`
+        ? `/api/products?limit=${limit}&page=${result.nextPage}`
         : null;
 
     const res={

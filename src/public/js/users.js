@@ -54,7 +54,7 @@ function changeUserRole(userId, isChecked) {
 
 function deleteUser(userId) {
 
-  fetch(`http://localhost:8080/api/users/${userId}`, {
+  fetch(`/api/users/${userId}`, {
     method: 'DELETE',
     body: JSON.stringify({ id: userId }),
     headers: {

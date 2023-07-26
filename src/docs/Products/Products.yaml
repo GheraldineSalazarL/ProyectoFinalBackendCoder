@@ -179,8 +179,8 @@ components:
         page: 2
         hasPrevPage: true
         hasNextPage: true
-        prevLink: http://localhost:8080/api/products?limit=10&page=1
-        nextLink: http://localhost:8080/api/products?limit=10&page=2
+        prevLink: /api/products?limit=10&page=1
+        nextLink: /api/products?limit=10&page=2
     Product: 
       type: object
       properties: 
